@@ -1,0 +1,20 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: CHATROOM-SERVER
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: chatroom
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
